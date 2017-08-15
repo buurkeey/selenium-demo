@@ -13,11 +13,11 @@ services:
       - "5555"
     depends_on:
       - selenium
-  demo_myapp:
-    build: ./
-    image: myapp:latest
-    volumes:
-      - ./:/myapp:rw
-    depends_on:
-      - selenium
-      - chromenode
+#  demo_myapp:
+#    build: ./
+#    image: myapp:latest
+#    volumes:
+#      - ./:/myapp:rw
+#    depends_on:
+#      - selenium
+#      - chromenode
