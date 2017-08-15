@@ -1,0 +1,2 @@
+default: --require features --require ./bdd-helper --format pretty --format html --out cucumber_output/report.html
+parallel: --require features --require ./bdd-helper --format pretty --format html --out cucumber_output/report<%= ENV['TEST_ENV_NUMBER']%>.html
