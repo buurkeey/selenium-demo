@@ -6,9 +6,9 @@ require 'capybara/dsl'
 require 'selenium-cucumber'
 
 
-# $REMOTE_URL = 'http://selenium:4444/wd/hub'
+$REMOTE_URL = 'http://selenium:4444/wd/hub'
 $URL = 'https://www.ebay.com/'
 
-if ENV['REMOTE_URL'] != nil
-  $REMOTE_URL = ENV['REMOTE_URL']
-end
+# if ENV['REMOTE_URL'] != nil
+#   $REMOTE_URL = ENV['REMOTE_URL']
+# end

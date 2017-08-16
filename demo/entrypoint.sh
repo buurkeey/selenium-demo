@@ -1,5 +1,3 @@
 #!/bin/bash
-mkdir -p /myapp/cucumber_output
-bundle install
-#parallel_cucumber features/test/*.feature --group-by scenarios --format pretty --format html --out cucumber_output/report<%= ENV['TEST_ENV_NUMBER']%>.html -n 5
-parallel_cucumber features/test/demo.feature --group-by scenarios -n 1
+#cucumber --require features --require ./bdd-helper --format pretty --format html --out cucumber_output/report.html
+parallel_cucumber features/test/demo.feature -n 2 --group-by scenarios -o "--require features --require ./bdd-helper --format pretty --format html --out cucumber_output/report.html"
